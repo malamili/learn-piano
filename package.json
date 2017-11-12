@@ -1,0 +1,38 @@
+{
+  "name": "learn-piano",
+  "version": "1.0.0",
+  "description": "Simple CLI application to learn piano basics",
+  "main": "lib/index.js",
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malamili/learn-piano.git"
+  },
+  "keywords": [
+    "piano"
+  ],
+  "author": {
+    "name": "Mohamad Alamili",
+    "email": "mohamad@alamili.com"
+  },
+  "scripts": {
+    "start": "node ./run/run.js",
+    "prepublish": "./node_modules/coffee-script/bin/coffee -o lib -c src"
+  },
+  "bin": {
+    "learn-piano": "./run/run.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malamili/learn-piano/issues"
+  },
+  "homepage": "https://github.com/malamili/learn-piano#readme"
+}
